@@ -71,13 +71,20 @@ return {
           desc = "Close buffer from tabline",
         },
 
-        -- tables with just a `desc` key will be registered with which-key if it's installed
-        -- this is useful for naming menus
-        -- ["<Leader>b"] = { desc = "Buffers" },
-
-        -- setting a mapping to false will disable it
-        -- ["<C-S>"] = false,
+        ["<Leader>q"] = {"<Cmd>confirm qall<CR>", remap = true, desc = "Exit AstroNvim"},
+        ["<Leader>m"] = {"gcc", remap = true, desc = "Toggle comment line"},
+        ["<Leader>/"] = {"<Leader>fw", desc = "Live Grep"},
+        ["<Leader><Leader>"] = {"<Leader>ff", remap = true, desc = "Find files"},
+        ["<C-/>"] = {"<Cmd>ToggleTerm direction=float<CR>", remap = true, desc = "Toggle Current Terminal"},
+        ["P"] = {'"0p', remap = true, desc = "Past with copy register"},
       },
+      x = {
+        ["<Leader>m"] = {"gc", remap = true, desc = "Toggle comment"},
+        ["P"] = {'"0p', remap = true, desc = "Past with copy register"},
+      },
+      t = {
+        ["<C-/>"] = {"<F7>", remap = true, desc = "Toggle Current Terminal"},
+      }
     },
   },
 }
