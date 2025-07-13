@@ -76,7 +76,7 @@ return {
         ["<Leader>/"] = {"<Leader>fw", desc = "Live Grep"},
         ["<Leader><Leader>"] = {"<Leader>ff", remap = true, desc = "Find files"},
         ["<C-/>"] = {"<Cmd>ToggleTerm direction=float<CR>", remap = true, desc = "Toggle Current Terminal"},
-        ["P"] = {'"0p', remap = true, desc = "Past with copy register"},
+        ["<Leader>h"] = {"<cmd>ClangdSwitchSourceHeader<cr>", desc = "Switch cpp header and source" },       ["P"] = {'"0p', remap = true, desc = "Past with copy register"},
       },
       x = {
         ["<Leader>m"] = {"gc", remap = true, desc = "Toggle comment"},
