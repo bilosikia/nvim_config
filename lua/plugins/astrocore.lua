@@ -79,6 +79,7 @@ return {
         ["<Leader>h"] = { "<cmd>ClangdSwitchSourceHeader<cr>", desc = "Switch cpp header and source" },
         ["P"] = { '"0p', remap = true, desc = "Past with copy register" },
         ["<Leader>r"] = { "<Leader>lR", remap = true, nowait = true, desc = "References" },
+        ["<Leader>O"] = { "<cmd>Neotree reveal<cr>", desc = "neotree reveal" },
       },
       x = {
         ["<Leader>m"] = { "gc", remap = true, desc = "Toggle comment" },
